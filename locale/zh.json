@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "AI查余额",
+    "description": "让 AI 主动查询 DeepSeek 账号余额，并在每轮对话中注入余额快照与省电/紧急停机策略。"
+  }
+}

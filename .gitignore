@@ -1,0 +1,9 @@
+node_modules/
+.pnpm-store/
+coverage/
+*.log
+*.tgz
+.publish/
+.pack.json
+.DS_Store
+Thumbs.db

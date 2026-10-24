@@ -1,0 +1,63 @@
+{
+  "name": "dsh-your-balance",
+  "version": "1.0.0",
+  "description": "AI查余额 — a balance-checking tool and per-turn balance-aware power-saving policy for DeepSeek Harness.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib/*.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-llm": ">=0.2.0-rc.1 <0.2.1-0 || >=0.2.1-rc.1 <0.3.0-0",
+    "@deepseek-ai/dsh-tools": ">=0.2.0-rc.1 <0.2.1-0 || >=0.2.1-rc.1 <0.3.0-0"
+  },
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek",
+    "balance",
+    "account",
+    "usage",
+    "agent"
+  ],
+  "author": "LzdqesjG",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LzdqesjG/dsh-your-balance.git"
+  },
+  "homepage": "https://github.com/LzdqesjG/dsh-your-balance#readme",
+  "bugs": {
+    "url": "https://github.com/LzdqesjG/dsh-your-balance/issues"
+  },
+  "license": "MIT"
+}

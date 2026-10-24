@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "AI Balance Check",
+    "description": "Let the model query the DeepSeek account balance and carry a balance snapshot with power-saving and stop policies into every turn."
+  }
+}
